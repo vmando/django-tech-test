@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Growthstreet Bank</title>
+    </head>
+
+    <body>
+      <h3>Click the button in order to register and request a loan</h3>
+
+     <a href="{% url 'borrowers:register' %}">Register</a>
+
+    {% block content %}{% endblock content %}
+    </body>
+</html>

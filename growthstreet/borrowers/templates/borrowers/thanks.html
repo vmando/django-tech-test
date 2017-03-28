@@ -1,0 +1,9 @@
+{% extends 'borrowers/base.html' %}
+
+
+{% block content %}
+<div class="container">
+    <h2>We have received your request. We will get back to you shortly.</h2>
+    <h2>If you wish to submit a new loan request, please click <a href="{% url 'borrowers:loan' %}">here</a> 
+</div>
+{% endblock content %}

@@ -1,0 +1,13 @@
+{% extends 'borrowers/base.html' %}
+
+
+{% block content %}
+<div class="container">
+    <h1>Please enter the below details about your business. You will be redirected to the loan request page after the submission.</h1>
+    <form method="post", action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+{% endblock content %}

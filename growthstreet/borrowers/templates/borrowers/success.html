@@ -1,0 +1,10 @@
+{% extends 'borrowers/base.html' %}
+
+
+{% block content %}
+<div class="container">
+    <h2>Registration was successful!</h2>
+    <h2>Click <a href="{% url 'borrowers:business' %}">here</a> to enter more information on your business. This will be helpful when processing your requests.</h2>
+    <h2>If you wish to directly submit a new loan request, click <a href="{% url 'borrowers:loan' %}">here</a> 
+</div>
+{% endblock content %}
